@@ -29,17 +29,36 @@ export const addButton = style({
 })
 
 export const boardItem = style({
-    
+    color: vars.color.brightText,
+    fontSize: vars.fontSizing.T3,
+    backgroundColor: vars.color.mainFaded,
+    padding: vars.spacing.medium,
+    borderRadius: 10,
+    cursor: "pointer",
+    marginRight: vars.spacing.big1,
+    ":hover": {
+        opacity: 0.8,
+        transform: "scale(1.03)",
+    }
 })
 
 export const boardItemActive = style({
-
+    color: vars.color.brightText,
+    fontSize: vars.fontSizing.T3,
+    backgroundColor: vars.color.selectedTab,
+    padding: vars.spacing.medium,
+    borderRadius: 10,
+    cursor: "pointer",
+    marginRight: vars.spacing.big1
 })
 
 export const addSection = style({
-
+    display: "flex",
+    alignItems: "center",
+    marginLeft: "auto"
 })
 
 export const smallTitle = style({
-
+    color: vars.color.brightText,
+    fontSize: vars.fontSizing.T3
 })
