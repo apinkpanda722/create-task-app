@@ -29,7 +29,7 @@ function App() {
                   이 게시판 삭제하기
               </button>
               <button>
-                  황동 목록 보이기
+                  활동 목록 보이기
               </button>
           </div>
       </div>
