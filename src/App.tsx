@@ -3,7 +3,6 @@ import BoardList from "./components/BoardList/BoardList.tsx";
 import { useState } from "react";
 import ListsContainer from "./components/ListsContainer/ListsContainer.tsx";
 import { useTypedSelector } from "./hooks/redux.ts";
-import listsContainer from "./components/ListsContainer/ListsContainer.tsx";
 import EditModal from "./components/EditModal/EditModal.tsx";
 
 function App() {
