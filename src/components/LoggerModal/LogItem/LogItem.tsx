@@ -1,6 +1,7 @@
 import { ILogItem } from "../../../types";
 import { FC } from "react";
 import { BsFillPersonFill } from "react-icons/bs";
+import { author, date, logItemWrap, message } from "./LogItem.css.ts";
 
 type TLogItemProps = {
     logItem: ILogItem;
@@ -18,13 +19,13 @@ const LogItem: FC<TLogItemProps> = ({
         `
 
     return (
-        <div>
-            <div>
+        <div className={logItemWrap}>
+            <div className={author}>
                 <BsFillPersonFill />
                 {logItem.logAuthor}
             </div>
-            <div>{logItem.logMessage}</div>
-            <div>{showOffsetTime}</div>
+            <div className={message}>{logItem.logMessage}</div>
+            <div className={date}>{showOffsetTime}</div>
         </div>
 
     )
