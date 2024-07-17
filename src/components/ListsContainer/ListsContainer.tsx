@@ -16,7 +16,7 @@ const ListsContainer: FC<TListContainerProps> = ({
     return (
         <div className={listsContainer}>
             {
-                lists.map(list => (
+                lists && lists.map(list => (
                     <List
                         key={list.listId}
                         list={list}
