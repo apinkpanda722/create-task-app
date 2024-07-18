@@ -12,9 +12,7 @@ type TSideFormProps = {
 }
 
 const SideForm: FC<TSideFormProps> = ({
-    setIsFormOpen,
-    inputRef
-}) => {
+    setIsFormOpen}) => {
     const [inputText, setInputText] = useState('')
 
     const dispatch = useTypedDispatch();
@@ -34,6 +32,7 @@ const SideForm: FC<TSideFormProps> = ({
                     board: {
                         boardId: uuidv4(),
                         boardName: inputText,
+                        lists: []
                     }
                 })
             )

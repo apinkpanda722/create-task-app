@@ -9,8 +9,6 @@ import { GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/
 import { app } from "../../firebase.ts";
 import { removeUser, setUser } from "../../store/slices/userSlice.ts";
 import { useAuth } from "../../hooks/useAuth.ts";
-import { Simulate } from "react-dom/test-utils";
-import error = Simulate.error;
 
 type TBoardListProps = {
     activeBoardId: string;
